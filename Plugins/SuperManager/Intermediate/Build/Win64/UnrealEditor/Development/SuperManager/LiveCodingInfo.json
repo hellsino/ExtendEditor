@@ -1,0 +1,21 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SuperManager.cpp.obj": [
+			"QuickAssetAction.cpp.obj",
+			"OutlinerSelectionLockColumn.cpp.obj",
+			"SuperManagerStyle.cpp.obj",
+			"SuperManagerUICommands.cpp.obj",
+			"AdvanceDeleteWidget.cpp.obj",
+			"SuperManager.cpp.obj",
+			"QuickActorActionsWidget.cpp.obj",
+			"QuickMaterialCreationWidget.cpp.obj"
+		],
+		"Module.SuperManager.gen.cpp.obj": [
+			"QuickActorActionsWidget.gen.cpp.obj",
+			"QuickAssetAction.gen.cpp.obj",
+			"QuickMaterialCreationWidget.gen.cpp.obj",
+			"SuperManager.init.gen.cpp.obj"
+		]
+	}
+}

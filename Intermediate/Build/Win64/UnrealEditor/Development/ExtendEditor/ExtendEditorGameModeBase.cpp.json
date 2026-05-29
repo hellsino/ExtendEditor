@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\source\\extendeditor\\extendeditorgamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\intermediate\\build\\win64\\unrealeditor\\development\\extendeditor\\definitions.extendeditor.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\source\\extendeditor\\extendeditorgamemodebase.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\intermediate\\build\\win64\\unrealeditor\\inc\\extendeditor\\extendeditorgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

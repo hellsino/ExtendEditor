@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\zxwang\\Documents\\Unreal Projects\\ExtendEditor\\Source\\ExtendEditor\\ExtendEditor.Build.cs",
+		"C:\\Users\\zxwang\\Documents\\Unreal Projects\\ExtendEditor\\Plugins\\SuperManager\\Source\\SuperManager\\SuperManager.Build.cs",
+		"C:\\Users\\zxwang\\Documents\\Unreal Projects\\ExtendEditor\\Source\\ExtendEditor.Target.cs",
+		"C:\\Users\\zxwang\\Documents\\Unreal Projects\\ExtendEditor\\Source\\ExtendEditorEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.0"
+}

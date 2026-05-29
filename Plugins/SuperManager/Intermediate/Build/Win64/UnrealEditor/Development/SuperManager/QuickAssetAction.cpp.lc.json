@@ -1,0 +1,28 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\source\\supermanager\\private\\assetactions\\quickassetaction.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\intermediate\\build\\win64\\unrealeditor\\development\\supermanager\\definitions.supermanager.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\source\\supermanager\\public\\assetactions\\quickassetaction.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\editor\\blutility\\classes\\assetactionutility.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\editor\\blutility\\classes\\editorutilityobject.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blutility\\editorutilityobject.generated.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\editor\\blutility\\private\\blutilitymenuextensions.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blutility\\blutilitymenuextensions.generated.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blutility\\assetactionutility.generated.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\intermediate\\build\\win64\\unrealeditor\\inc\\supermanager\\quickassetaction.generated.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\source\\supermanager\\public\\debugheader.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\editor\\blutility\\public\\editorutilitylibrary.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\engine\\classes\\kismet\\blueprintasyncactionbase.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\blueprintasyncactionbase.generated.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blutility\\editorutilitylibrary.generated.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\plugins\\editor\\editorscriptingutilities\\source\\editorscriptingutilities\\public\\editorassetlibrary.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\plugins\\editor\\editorscriptingutilities\\intermediate\\build\\win64\\unrealeditor\\inc\\editorscriptingutilities\\editorassetlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

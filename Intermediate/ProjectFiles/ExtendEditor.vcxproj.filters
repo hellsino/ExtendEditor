@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ExtendEditor.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ExtendEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ExtendEditorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitignore" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager">
+      <UniqueIdentifier>{65017A13-CCC4-33B2-A7D8-1471361CDC44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager\Source">
+      <UniqueIdentifier>{97717827-5EDC-38E3-9B6B-F8DE9AAE9464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager">
+      <UniqueIdentifier>{281B97EA-4224-3594-B9A5-1C4D2BCBA3C9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SuperManager\Source\SuperManager\SuperManager.Build.cs">
+      <Filter>Plugins\SuperManager\Source\SuperManager</Filter>
+    </None>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private">
+      <UniqueIdentifier>{FB30F966-CEBC-3124-AA3C-3AAF01109C32}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\SuperManager.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\ActorActions">
+      <UniqueIdentifier>{F1E65BF6-8CB4-3228-B095-E9F2FE3B2A22}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\ActorActions\QuickActorActionsWidget.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\ActorActions</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\AssetActions">
+      <UniqueIdentifier>{FFEEB1F4-03A4-30A4-9F94-467A504D6593}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\AssetActions\QuickAssetAction.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\AssetActions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\AssetActions\QuickMaterialCreationWidget.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\AssetActions</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\CustomStyle">
+      <UniqueIdentifier>{2AA7B8D6-55CB-3F1F-B002-628B4F45B3E5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\CustomStyle\SuperManagerStyle.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\CustomStyle</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\SlateWidgets">
+      <UniqueIdentifier>{1102AD7D-70CE-34C5-BB45-9CD38F4CA416}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\SlateWidgets\AdvanceDeleteWidget.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\SlateWidgets</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public">
+      <UniqueIdentifier>{0C308D3C-15B6-3811-B7FE-07C2E9BFD5A3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\DebugHeader.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\SuperManager.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\ActorActions">
+      <UniqueIdentifier>{AD9E3067-5AD7-3B54-9659-49C1B1E2278B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\ActorActions\QuickActorActionsWidget.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\ActorActions</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\AssetActions">
+      <UniqueIdentifier>{DD3346C4-5888-3A16-8A40-9C065E066145}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\AssetActions\QuickAssetAction.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\AssetActions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\AssetActions\QuickMaterialCreationWidget.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\AssetActions</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\CustomStyle">
+      <UniqueIdentifier>{51C5E0AC-240F-36F0-8B93-1945A110CAA6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\CustomStyle\SuperManagerStyle.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\CustomStyle</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\SlateWidgets">
+      <UniqueIdentifier>{144D6E1B-0576-37C1-A660-DB1153775AB1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\SlateWidgets\AdvanceDeleteWidget.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\SlateWidgets</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\SuperManager\SuperManager.uplugin">
+      <Filter>Plugins\SuperManager</Filter>
+    </None>
+    <Filter Include="Plugins\SuperManager\Resources">
+      <UniqueIdentifier>{982C0006-5B0D-3AB8-8682-9FD784633D0F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SuperManager\Resources\AdvanceDeletion.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\SuperManager\Resources\DeleteEmptyFolders.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\SuperManager\Resources\DeleteUnusedAsset.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\SuperManager\Resources\Icon128.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\SuperManager\Resources\SelectionLock.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\SuperManager\Resources\SelectionUnlock.png">
+      <Filter>Plugins\SuperManager\Resources</Filter>
+    </None>
+    <Filter Include="Source\ExtendEditor">
+      <UniqueIdentifier>{532D8F8F-71E7-3444-9BC4-9A1C335E61A7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ExtendEditor\ExtendEditor.Build.cs">
+      <Filter>Source\ExtendEditor</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ExtendEditor\ExtendEditor.cpp">
+      <Filter>Source\ExtendEditor</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ExtendEditor\ExtendEditor.h">
+      <Filter>Source\ExtendEditor</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ExtendEditor\ExtendEditorGameModeBase.cpp">
+      <Filter>Source\ExtendEditor</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ExtendEditor\ExtendEditorGameModeBase.h">
+      <Filter>Source\ExtendEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

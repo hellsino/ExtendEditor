@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\intermediate\\build\\win64\\unrealeditor\\inc\\extendeditor\\extendeditor.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\intermediate\\build\\win64\\unrealeditor\\development\\extendeditor\\definitions.extendeditor.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

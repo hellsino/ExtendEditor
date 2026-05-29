@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ExtendEditor.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditor.cpp.obj"
+"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditorGameModeBase.cpp.obj"
+"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditor.init.gen.cpp.obj"
+"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditorGameModeBase.gen.cpp.obj"
+"..\Intermediate\Build\Win64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\UnrealEditor-ExtendEditor.lib"

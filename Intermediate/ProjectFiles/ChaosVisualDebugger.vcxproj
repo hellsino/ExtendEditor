@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3207BFC4-94AC-3D63-A672-5E9ACB6C9D13}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>ChaosVisualDebugger</RootNamespace>
+    <PlatformToolset>v143</PlatformToolset>
+    <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" ChaosVisualDebugger Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" ChaosVisualDebugger Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" ChaosVisualDebugger Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\ChaosVisualDebugger-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" ChaosVisualDebugger Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" ChaosVisualDebugger Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" ChaosVisualDebugger Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\ChaosVisualDebugger-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" ChaosVisualDebugger Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" ChaosVisualDebugger Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" ChaosVisualDebugger Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\ChaosVisualDebugger.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" ChaosVisualDebugger Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" ChaosVisualDebugger Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" ChaosVisualDebugger Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\ChaosVisualDebugger-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" ChaosVisualDebugger Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" ChaosVisualDebugger Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" ChaosVisualDebugger Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\ChaosVisualDebugger-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Core;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\TraceLog\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Core\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\TraceLog;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Projects;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Projects\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Json;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Json\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\AppFramework;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\AppFramework\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\CoreUObject;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\CoreUObject\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\ApplicationCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ApplicationCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\RHI;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RHI\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Slate;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Slate\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\InputCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Classes;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\SlateCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SlateCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\ImageWrapper;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ImageWrapper\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\StandaloneRenderer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\StandaloneRenderer\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\SourceCodeAccess;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SourceCodeAccess\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Settings;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\Settings\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\TraceInsights;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceInsights\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Cbor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Cbor\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\DesktopPlatform;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\DesktopPlatform\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\EditorStyle;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\EditorStyle\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\RenderCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RenderCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\Sockets;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Sockets\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\NetCommon;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net\Common\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\TraceAnalysis;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceAnalysis\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\TraceServices;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceServices\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\WorkspaceMenuStructure;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\WorkspaceMenuStructure\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\XmlParser;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\XmlParser\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\SlateReflector;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SlateReflector\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Inc\ChaosVisualDebugger;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Public;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\ChaosVisualDebugger.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\ChaosVisualDebugger.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\ChaosVisualDebuggerMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\ChaosVisualDebugger\Definitions.ChaosVisualDebugger.h</ForcedIncludeFiles>
+      <AdditionalOptions>$(AdditionalOptions) /Yu"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h"</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\ChaosVisualDebuggerMain.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\ChaosVisualDebuggerSlateStyle.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\ChaosVisualDebugger\Definitions.ChaosVisualDebugger.h</ForcedIncludeFiles>
+      <AdditionalOptions>$(AdditionalOptions) /Yu"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h"</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\ChaosVisualDebuggerSlateStyle.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\Linux\ChaosVisualDebuggerLinux.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\ChaosVisualDebugger\Definitions.ChaosVisualDebugger.h</ForcedIncludeFiles>
+      <AdditionalOptions>$(AdditionalOptions) /Yu"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\Mac\ChaosVisualDebuggerMac.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\ChaosVisualDebugger\Definitions.ChaosVisualDebugger.h</ForcedIncludeFiles>
+      <AdditionalOptions>$(AdditionalOptions) /Yu"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\Windows\ChaosVisualDebuggerWindows.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\ChaosVisualDebugger\Definitions.ChaosVisualDebugger.h</ForcedIncludeFiles>
+      <AdditionalOptions>$(AdditionalOptions) /Yu"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\ChaosVisualDebugger\Development\Slate\SharedPCH.Slate.ShadowErrors.h"</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Private\Windows\ChaosVisualDebuggerWindows.h"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\ChaosVisualDebugger\Resources\Windows\ChaosVisualDebugger.ico"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

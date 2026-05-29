@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{382BA361-2AC0-3E58-ADFC-11BA484E6C14}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>UnrealLightmass</RootNamespace>
+    <PlatformToolset>v143</PlatformToolset>
+    <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealLightmass Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealLightmass Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealLightmass Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealLightmass-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealLightmass Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealLightmass Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealLightmass Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealLightmass-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealLightmass Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealLightmass Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealLightmass Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealLightmass.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealLightmass Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealLightmass Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealLightmass Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealLightmass-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealLightmass Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealLightmass Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealLightmass Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealLightmass-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Launch;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\CPUSolver;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Templates;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\Core;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\TraceLog\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Core\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\TraceLog;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\CoreUObject;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\CoreUObject\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\zlib\v1.2.8\include\Win64\VS2015;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\SwarmInterface;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\SwarmInterface\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\Projects;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Projects\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\Json;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Json\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\ApplicationCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ApplicationCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\RHI;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RHI\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\Messaging;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Messaging\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Inc\UnrealLightmass;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\Intel\Embree\Embree270\Win64\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\UnrealLightmass.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Programs\UnrealLightmass\Config\DefaultEngine.ini"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\UnrealLightmass.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\CPUSolver\CPUSolver.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\CPUSolver\CPUSolver.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Exporter.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Exporter.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Importer.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Importer.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\LightmassScene.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\LightmassScene.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\LightmassSwarm.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\LightmassSwarm.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Material.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Material.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Mesh.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\ImportExport\Mesh.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Launch\UnitTest.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Launch\UnitTest.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Launch\UnrealLightmass.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Launch\UnrealLightmass.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\AdaptiveVolumetricLightmap.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\BSP.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\BSP.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\BuildOptions.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Collision.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Collision.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Embree.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Embree.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\FinalGather.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\FluidSurface.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\FluidSurface.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\GatheredLightingSample.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Landscape.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Landscape.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Lighting.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingCache.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingCache.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingMesh.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingMesh.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingSystem.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingSystem.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightingSystem.inl"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightmapData.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\LightmapData.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Mappings.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Mappings.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\MonteCarlo.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\MonteCarlo.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\PhotonMapping.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\PrecomputedVisibility.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Radiosity.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Raster.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\SampleVolume.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\StaticMesh.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\StaticMesh.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\Texture.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\TextureMapping.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\TextureMappingSetup.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\Lighting\VolumeDistanceField.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\LMCore.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\LMCore.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMCollision.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMkDOP.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMMath.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMMath.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMMathSSE.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\LMOctree.h"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\MersennePrimeTwister.tps"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Math\SFMT.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMDebug.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMDebug.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMHelpers.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMStats.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMThreading.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealLightmass\Development\UnrealLightmass\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Misc\LMThreading.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Private\LightmassCore\Templates\LMQueue.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\FluidExport.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\ImportExport.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\LightmassPublic.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\MaterialExport.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\MeshExport.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealLightmass\Public\SceneExport.h"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\LowLevelTests.Target.cs" />
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\LowLevelTests.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\README.md" />
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\vstest.runsettings" />
+    <Filter Include="Private">
+      <UniqueIdentifier>{47F9082F-C380-3A62-9531-096AA1D110F1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\Private\main.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\LowLevelTests\Private\SampleTest.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

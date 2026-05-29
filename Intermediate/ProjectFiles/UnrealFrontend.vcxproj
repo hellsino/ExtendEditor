@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ACF1B23-3918-3892-8609-3A1E143B77D4}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>UnrealFrontend</RootNamespace>
+    <PlatformToolset>v143</PlatformToolset>
+    <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealFrontend Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealFrontend Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealFrontend Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealFrontend-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealFrontend Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealFrontend Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealFrontend Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealFrontend-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealFrontend Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealFrontend Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealFrontend Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealFrontend.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealFrontend Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealFrontend Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealFrontend Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealFrontend-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealFrontend Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealFrontend Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealFrontend Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealFrontend-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\AutomationController;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\AutomationController\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Core;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\TraceLog\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Core\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\TraceLog;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\CoreUObject;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\CoreUObject\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\AutomationTest;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\AutomationTest\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\ApplicationCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ApplicationCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\RHI;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RHI\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\DeviceManager;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\DeviceManager\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\TargetDeviceServices;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TargetDeviceServices\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\LauncherServices;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\LauncherServices\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Messaging;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Messaging\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\OutputLog;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\OutputLog\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Profiler;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\Profiler\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\InputCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Classes;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\RenderCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RenderCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Slate;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Slate\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Json;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Json\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\SlateCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SlateCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\ImageWrapper;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ImageWrapper\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\EditorStyle;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\EditorStyle\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\ProfilerClient;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\ProfilerClient\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\ProfilerService;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\ProfilerService\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\DesktopPlatform;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\DesktopPlatform\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\ProjectLauncher;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\ProjectLauncher\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\TargetPlatform;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TargetPlatform\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\TextureFormat;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TextureFormat\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Projects;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Projects\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\SessionFrontend;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SessionFrontend\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\SessionServices;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SessionServices\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\SourceCodeAccess;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SourceCodeAccess\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Settings;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\Settings\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\StandaloneRenderer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\StandaloneRenderer\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\DeveloperSettings;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\DeveloperSettings\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\AudioPlatformConfiguration;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\AudioPlatformConfiguration\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Intermediate\Build\Win64\UnrealFrontend\Inc\VisualStudioSourceCodeAccess;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Networking;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Networking\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\Sockets;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Sockets\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\NetCommon;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net\Common\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\UdpMessaging\Intermediate\Build\Win64\UnrealFrontend\Inc\UdpMessaging;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\UdpMessaging\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\UdpMessaging\Source\UdpMessaging\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\TcpMessaging\Intermediate\Build\Win64\UnrealFrontend\Inc\TcpMessaging;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\TcpMessaging\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Messaging\TcpMessaging\Source\TcpMessaging\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\SlateReflector;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SlateReflector\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Inc\UnrealFrontend;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Public;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\UnrealFrontend.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Programs\UnrealFrontend\Config\DefaultEngine.ini"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\UnrealFrontend.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\UnrealFrontendMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\UnrealFrontendMain.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchFromProfileCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchFromProfileCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsConvertCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsConvertCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsDumpMemoryCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsDumpMemoryCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\UserInterfaceCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Commands\UserInterfaceCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Linux\LinuxUnrealFrontendMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Mac\MacUnrealFrontendMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Private\Windows\WindowsUnrealFrontendMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealFrontend\Development\UnrealFrontend\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealFrontend\Resources\Mac\Info.plist"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

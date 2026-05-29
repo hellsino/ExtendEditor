@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C63D7CE-A33A-3398-9362-3EF66909D37C}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>UnrealInsights</RootNamespace>
+    <PlatformToolset>v143</PlatformToolset>
+    <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealInsights-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealInsights-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealInsights.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealInsights-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files\UnrealEngine-5.0.0-release\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Binaries\Win64\UnrealInsights-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AppFramework;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\AppFramework\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Core;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\TraceLog\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Core\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceLog;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\CoreUObject;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\CoreUObject\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ApplicationCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ApplicationCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RHI;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RHI\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Slate;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Slate\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\InputCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Classes;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\InputCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Json;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Json\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SlateCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ImageWrapper;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\ImageWrapper\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Projects;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Projects\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SourceCodeAccess;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SourceCodeAccess\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Settings;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\Settings\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\StandaloneRenderer;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\StandaloneRenderer\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TargetPlatform;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TargetPlatform\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DeveloperSettings;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\DeveloperSettings\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AudioPlatformConfiguration;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\AudioPlatformConfiguration\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DesktopPlatform;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\DesktopPlatform\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TextureFormat;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TextureFormat\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceInsights;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceInsights\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Cbor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Cbor\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\EditorStyle;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\EditorStyle\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RenderCore;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\RenderCore\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Sockets;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Sockets\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\NetCommon;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Net\Common\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceAnalysis;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceAnalysis\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceServices;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\TraceServices\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\WorkspaceMenuStructure;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Editor\WorkspaceMenuStructure\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\XmlParser;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\XmlParser\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Intermediate\Build\Win64\UnrealInsights\Inc\VisualStudioSourceCodeAccess;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateReflector;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Developer\SlateReflector\Public;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\UnrealInsights;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\Launch\Public;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\UnrealInsights.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Programs\UnrealInsights\Config\DefaultEngine.ini"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Programs\UnrealInsights\Config\DefaultUnrealInsightsSettings.ini"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\UnrealInsights.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\UnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\UnrealInsightsMain.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\UserInterfaceCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\UserInterfaceCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\IOS\IOSUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\Linux\LinuxUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\Mac\MacUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Private\Windows\WindowsUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\mimalloc\include;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\ThirdParty\LibTiff\Source;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib;C:\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Program Files\UnrealEngine-5.0.0-release\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Linux\UnrealInsights.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Linux\UTrace.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\Info.plist"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\make_icns.sh"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.icns"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.icns"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_128x128.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_128x128@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_16x16@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_256x256@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_32x32@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_512x512.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_512x512@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_128x128.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_128x128@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_16x16@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_256x256@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_32x32@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_512x512.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_512x512@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\make_ico.py"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights.ico"/>
+    <ResourceCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights.rc"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace.ico"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_24x24.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_48x48.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_24x24.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_48x48.png"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

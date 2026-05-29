@@ -1,0 +1,29 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\source\\supermanager\\private\\customstyle\\supermanagerstyle.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\program files\\unrealengine-5.0.0-release\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\intermediate\\build\\win64\\unrealeditor\\development\\supermanager\\definitions.supermanager.h",
+            "c:\\users\\zxwang\\documents\\unreal projects\\extendeditor\\plugins\\supermanager\\source\\supermanager\\public\\customstyle\\supermanagerstyle.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyle.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateborderbrush.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateboxbrush.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\brushes\\slatecolorbrush.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateroundedboxbrush.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateimagebrush.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\json\\public\\serialization\\jsonwriter.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\json\\public\\serialization\\jsontypes.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "c:\\program files\\unrealengine-5.0.0-release\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyleregistry.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
