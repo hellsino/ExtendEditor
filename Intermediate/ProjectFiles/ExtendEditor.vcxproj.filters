@@ -11,6 +11,7 @@
     <None Include="..\..\Source\ExtendEditorEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -66,11 +67,23 @@
     <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\AssetActions\QuickMaterialCreationWidget.cpp">
       <Filter>Plugins\SuperManager\Source\SuperManager\Private\AssetActions</Filter>
     </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\CustomOutlinerColumn">
+      <UniqueIdentifier>{F7F44A45-F7EC-3099-99C5-3C53D861658E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\CustomOutlinerColumn\OutlinerSelectionLockColumn.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\CustomOutlinerColumn</Filter>
+    </ClCompile>
     <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\CustomStyle">
       <UniqueIdentifier>{2AA7B8D6-55CB-3F1F-B002-628B4F45B3E5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\CustomStyle\SuperManagerStyle.cpp">
       <Filter>Plugins\SuperManager\Source\SuperManager\Private\CustomStyle</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\CustomUICommands">
+      <UniqueIdentifier>{4DB2AA1B-8C3A-3B29-88FA-AD61003B6C46}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\SuperManager\Source\SuperManager\Private\CustomUICommands\SuperManagerUICommands.cpp">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Private\CustomUICommands</Filter>
     </ClCompile>
     <Filter Include="Plugins\SuperManager\Source\SuperManager\Private\SlateWidgets">
       <UniqueIdentifier>{1102AD7D-70CE-34C5-BB45-9CD38F4CA416}</UniqueIdentifier>
@@ -102,11 +115,23 @@
     <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\AssetActions\QuickMaterialCreationWidget.h">
       <Filter>Plugins\SuperManager\Source\SuperManager\Public\AssetActions</Filter>
     </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\CustomOutlinerColumn">
+      <UniqueIdentifier>{1C339112-9E51-3D78-BA3E-3C2F7BDFD722}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\CustomOutlinerColumn\OutlinerSelectionLockColumn.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\CustomOutlinerColumn</Filter>
+    </ClInclude>
     <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\CustomStyle">
       <UniqueIdentifier>{51C5E0AC-240F-36F0-8B93-1945A110CAA6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\CustomStyle\SuperManagerStyle.h">
       <Filter>Plugins\SuperManager\Source\SuperManager\Public\CustomStyle</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\CustomUICommands">
+      <UniqueIdentifier>{78494144-2AB7-340C-B358-86553E71C072}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\SuperManager\Source\SuperManager\Public\CustomUICommands\SuperManagerUICommands.h">
+      <Filter>Plugins\SuperManager\Source\SuperManager\Public\CustomUICommands</Filter>
     </ClInclude>
     <Filter Include="Plugins\SuperManager\Source\SuperManager\Public\SlateWidgets">
       <UniqueIdentifier>{144D6E1B-0576-37C1-A660-DB1153775AB1}</UniqueIdentifier>
@@ -116,6 +141,12 @@
     </ClInclude>
     <None Include="..\..\Plugins\SuperManager\SuperManager.uplugin">
       <Filter>Plugins\SuperManager</Filter>
+    </None>
+    <Filter Include="Plugins\SuperManager\Config">
+      <UniqueIdentifier>{F317F33B-C859-3001-9A5E-8504252EF219}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\SuperManager\Config\FilterPlugin.ini">
+      <Filter>Plugins\SuperManager\Config</Filter>
     </None>
     <Filter Include="Plugins\SuperManager\Resources">
       <UniqueIdentifier>{982C0006-5B0D-3AB8-8682-9FD784633D0F}</UniqueIdentifier>

@@ -2,14 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SuperManager.cpp.obj": [
+			"QuickActorActionsWidget.cpp.obj",
 			"QuickAssetAction.cpp.obj",
+			"QuickMaterialCreationWidget.cpp.obj",
 			"OutlinerSelectionLockColumn.cpp.obj",
 			"SuperManagerStyle.cpp.obj",
 			"SuperManagerUICommands.cpp.obj",
 			"AdvanceDeleteWidget.cpp.obj",
-			"SuperManager.cpp.obj",
-			"QuickActorActionsWidget.cpp.obj",
-			"QuickMaterialCreationWidget.cpp.obj"
+			"SuperManager.cpp.obj"
 		],
 		"Module.SuperManager.gen.cpp.obj": [
 			"QuickActorActionsWidget.gen.cpp.obj",

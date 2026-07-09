@@ -277,6 +277,8 @@
 /I ..\Plugins\FX\Niagara\Source\NiagaraShader\Public
 /I ..\Plugins\FX\Niagara\Source\NiagaraVertexFactories\Public
 /I Developer\DesktopPlatform\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\SceneOutliner
+/I Editor\SceneOutliner\Public
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source

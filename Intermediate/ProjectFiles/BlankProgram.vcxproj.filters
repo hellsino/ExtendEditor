@@ -12,9 +12,63 @@
     <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\BlankProgram.h">
       <Filter>Private</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\MyCommands.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\MyCommands.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\MyEditor.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\MyEditor.h">
+      <Filter>Private</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\PlatformWorkarounds.cpp">
       <Filter>Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyButton.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyButton.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCanvas.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCanvas.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCompoundWidget.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCompoundWidget.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCustomDialog.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyCustomDialog.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyLeafWidget.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyLeafWidget.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyListView.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyListView.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyTreeView.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\UnrealEngine-5.0.0-release\Engine\Source\Programs\BlankProgram\Private\SMyTreeView.h">
+      <Filter>Private</Filter>
+    </ClInclude>
     <Filter Include="Resources">
       <UniqueIdentifier>{DDCF50C2-9294-3441-8F3F-7C1BBC892CB5}</UniqueIdentifier>
     </Filter>
