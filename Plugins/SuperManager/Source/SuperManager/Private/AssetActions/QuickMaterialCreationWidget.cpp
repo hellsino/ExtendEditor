@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "AssetActions/QuickMaterialCreationWidget.h"
 #include "DebugHeader.h"
 #include "EditorUtilityLibrary.h"
@@ -387,7 +386,6 @@ bool UQuickMaterialCreationWidget::TryConnectAO(UMaterialExpressionTextureSample
 			CreatedMaterial->Expressions.Add(TextureSampleNode);
 			CreatedMaterial->AmbientOcclusion.Expression = TextureSampleNode;
 			CreatedMaterial->PostEditChange();
-
 
 			TextureSampleNode->MaterialExpressionEditorX -= 600;
 			TextureSampleNode->MaterialExpressionEditorY += 960;

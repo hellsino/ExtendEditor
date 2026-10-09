@@ -13,5 +13,4 @@ UCLASS()
 class EXTENDEDITOR_API AExtendEditorGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
 };

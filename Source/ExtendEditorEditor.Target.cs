@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class ExtendEditorEditorTarget : TargetRules
 {
-	public ExtendEditorEditorTarget( TargetInfo Target) : base(Target)
+	public ExtendEditorEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ExtendEditor" } );
+		ExtraModuleNames.AddRange(new string[] { "ExtendEditor" });
 	}
 }
