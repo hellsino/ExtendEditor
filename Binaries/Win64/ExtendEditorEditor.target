@@ -17,7 +17,7 @@
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 0,
 		"BranchName": "++UE5+Release-5.0",
-		"BuildId": "6cfdf842-5a82-4fa6-98c7-66f294766592"
+		"BuildId": "37ad320e-4775-4995-94fa-b9964d01d1eb"
 	},
 	"BuildProducts": [
 		{
@@ -5423,6 +5423,14 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/Binaries/Win64/UnrealEditor-XGEController.pdb",
 			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/libcrypto-1_1-x64.dll",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/libssl-1_1-x64.dll",
+			"Type": "RequiredResource"
 		},
 		{
 			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor.modules",
@@ -26309,6 +26317,14 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/XGEController.uplugin",
 			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/libcrypto-1_1-x64.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/libssl-1_1-x64.dll",
+			"Type": "NonUFS"
 		},
 		{
 			"Path": "$(ProjectDir)/ExtendEditor.uproject",

@@ -1,5 +1,6 @@
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Source\ExtendEditor\ExtendEditor.cpp"
 /I .
+/I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\include"
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Inc\ExtendEditor"
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Source"
 /I Runtime
