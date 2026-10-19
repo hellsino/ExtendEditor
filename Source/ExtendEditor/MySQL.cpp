@@ -24,12 +24,6 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 	GConfig->GetString(TEXT("MySQL"), TEXT("User"), User, GEngineIni);
 	GConfig->GetString(TEXT("MySQL"), TEXT("Password"), Password, GEngineIni);
 
-	if (!bEnabled || Host.IsEmpty() || Database.IsEmpty())
-	{
-		Result.ErrorMessage = TEXT("[MySQL] 未启用或配置不完整（检查 Config/DefaultEngine.ini [MySQL]）");
-		return Result;
-	}
-
 #if !PLATFORM_WINDOWS
 	Result.ErrorMessage = TEXT("仅 Win64 支持 MySQL C API");
 	return Result;
@@ -47,15 +41,7 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 		return Result;
 	}
 
-	if (!mysql_real_connect(
-			Conn,
-			HostUtf8.Get(),
-			UserUtf8.Get(),
-			PasswordUtf8.Get(),
-			DatabaseUtf8.Get(),
-			MySqlPort,
-			nullptr,
-			0))
+	if (!mysql_real_connect(Conn,HostUtf8.Get(),UserUtf8.Get(),PasswordUtf8.Get(),DatabaseUtf8.Get(),MySqlPort,nullptr,0))
 	{
 		Result.ErrorMessage = FString(UTF8_TO_TCHAR(mysql_error(Conn)));
 		mysql_close(Conn);
