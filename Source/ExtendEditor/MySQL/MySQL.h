@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Model/QueryResult.h"
 
 class EXTENDEDITOR_API FMySQL
 {
