@@ -20,7 +20,7 @@ public:
 	static bool ConnectFromEngineIni(FMySQLConnection& OutConnection);
 	static bool Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection);
 
-	MYSQL* GetConn() const { return Conn; }
+	MYSQL* GetConnection() const { return Conn; }
 
 private:
 	MYSQL* Conn = nullptr;

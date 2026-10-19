@@ -18,7 +18,7 @@ FQueryResult FMySQL::SelectOneFromDual()
 		return Result;
 	}
 
-	MYSQL* Conn = Connection.GetConn();
+	MYSQL* Conn = Connection.GetConnection();
 
 	if (mysql_query(Conn, "SELECT 1 FROM DUAL") != 0)
 	{

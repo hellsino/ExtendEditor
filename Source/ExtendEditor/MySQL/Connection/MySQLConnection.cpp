@@ -49,8 +49,8 @@ bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& Out
 	                                      DatabaseUtf8.Get(), MySqlPort, nullptr, 0);
 	if (!Connected)
 	{
-		FString String(UTF8_TO_TCHAR(mysql_error(RawConn)));
-		// TODO Log
+		const FString ErrorMessage(UTF8_TO_TCHAR(mysql_error(RawConn)));
+		UE_LOG(LogTemp, Error, TEXT("[MySQL] connect fail: %s"), *ErrorMessage);
 		mysql_close(RawConn);
 		return false;
 	}
