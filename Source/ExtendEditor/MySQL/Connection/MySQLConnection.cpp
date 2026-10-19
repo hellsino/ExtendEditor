@@ -36,16 +36,9 @@ bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& Out
 	const FTCHARToUTF8 UserUtf8(*Config.User);
 	const FTCHARToUTF8 PasswordUtf8(*Config.Password);
 	const FTCHARToUTF8 DatabaseUtf8(*Config.Database);
-	const unsigned int MySqlPort =
-		Config.Port > 0 ? static_cast<unsigned int>(Config.Port) : 3306u;
+	const unsigned int MySqlPort = Config.Port > 0 ? static_cast<unsigned int>(Config.Port) : 3306u;
 
 	MYSQL* RawConn = mysql_init(nullptr);
-	if (!RawConn)
-	{
-		OutError = TEXT("mysql_init 失败");
-		return false;
-	}
-
 	MYSQL* Connected = mysql_real_connect(RawConn, HostUtf8.Get(), UserUtf8.Get(), PasswordUtf8.Get(),
 	                                      DatabaseUtf8.Get(), MySqlPort, nullptr, 0);
 	if (!Connected)
