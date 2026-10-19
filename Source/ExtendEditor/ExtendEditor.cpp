@@ -11,7 +11,7 @@ public:
 	{
 		FDefaultGameModuleImpl::StartupModule();
 
-		const FMySQLQueryResult QueryResult = FMySQL::SelectOneFromDual();
+		const FQueryResult QueryResult = FMySQL::SelectOneFromDual();
 		if (QueryResult.bSuccess)
 		{
 			UE_LOG(LogTemp, Log, TEXT("[MySQL] SELECT 1 FROM DUAL => %s"), *QueryResult.Value);
