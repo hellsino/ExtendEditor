@@ -73,15 +73,32 @@ FQueryResult FMySQL::GetUser()
 		return Result;
 	}
 
-	MYSQL_ROW Row = mysql_fetch_row(QueryResult);
-	if (!Row || !Row[0])
+	const unsigned int NumFields = mysql_num_fields(QueryResult);
+	MYSQL_FIELD* Fields = mysql_fetch_fields(QueryResult);
+	TArray<FString> Rows;
+
+	MYSQL_ROW Row = nullptr;
+	while ((Row = mysql_fetch_row(QueryResult)) != nullptr)
+	{
+		TArray<FString> Cells;
+		Cells.Reserve(NumFields);
+		for (unsigned int Index = 0; Index < NumFields; ++Index)
+		{
+			const FString FieldName(UTF8_TO_TCHAR(Fields[Index].name));
+			const FString FieldValue = Row[Index] ? FString(UTF8_TO_TCHAR(Row[Index])) : FString(TEXT("NULL"));
+			Cells.Add(FString::Printf(TEXT("%s=%s"), *FieldName, *FieldValue));
+		}
+		Rows.Add(FString::Join(Cells, TEXT(", ")));
+	}
+
+	if (Rows.Num() == 0)
 	{
 		Result.ErrorMessage = TEXT("No Query Result.");
 		mysql_free_result(QueryResult);
 		return Result;
 	}
 
-	Result.Value = FString(UTF8_TO_TCHAR(Row[0]));
+	Result.Value = FString::Join(Rows, TEXT("\n"));
 	Result.bSuccess = true;
 
 	mysql_free_result(QueryResult);

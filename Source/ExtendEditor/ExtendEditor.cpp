@@ -14,7 +14,7 @@ public:
 		const FQueryResult QueryResult = FMySQL::GetUser();
 		if (QueryResult.bSuccess)
 		{
-			UE_LOG(LogTemp, Log, TEXT("[MySQL] SELECT 1 FROM DUAL => %s"), *QueryResult.Value);
+			UE_LOG(LogTemp, Log, TEXT("[MySQL] user => %s"), *QueryResult.Value);
 		}
 		else
 		{

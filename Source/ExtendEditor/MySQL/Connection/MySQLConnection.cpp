@@ -55,6 +55,14 @@ bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& Out
 		return false;
 	}
 
+	if (mysql_set_character_set(Connected, "utf8mb4") != 0)
+	{
+		const FString ErrorMessage(UTF8_TO_TCHAR(mysql_error(Connected)));
+		UE_LOG(LogTemp, Error, TEXT("[MySQL] set charset fail: %s"), *ErrorMessage);
+		mysql_close(Connected);
+		return false;
+	}
+
 	OutConnection.Conn = Connected;
 	return true;
 }
