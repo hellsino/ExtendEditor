@@ -13,28 +13,34 @@ public class ExtendEditor : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
-		// MySQL Connector/C++ 8, Win64 only
+		// MySQL Connector/C++ 8 Legacy JDBC API, Win64 only
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
-			PrivateDefinitions.Add("STATIC_CONCPP");
+			bEnableExceptions = true;
 
-			string MySQLPath =
-				Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/mysql-connector-c++-8.0.20-winx64"));
-			string MySQLLibPath = Path.Combine(MySQLPath, "lib64/vs14");
-			string MySQLDllPath = Path.Combine(MySQLPath, "lib64");
+			string MySqlRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/mysql-connector-c++-8.0.20-winx64"));
+			string IncludeDir = Path.Combine(MySqlRoot, "include");
+			string LibDir = Path.Combine(MySqlRoot, "lib64/vs14");
+			string DllDir = Path.Combine(MySqlRoot, "lib64");
 
-			PrivateIncludePaths.Add(Path.Combine(MySQLPath, "include"));
+			// Legacy JDBC 头文件依赖 boost/shared_ptr.hpp（使用引擎自带 Boost）
+			string BoostIncludeDir = Path.Combine(EngineDirectory, "Source/ThirdParty/Boost/boost-1_70_0/include");
+			PublicSystemIncludePaths.Add(BoostIncludeDir);
+
+			PublicIncludePaths.Add(IncludeDir);
 
 			// Recommended library link order
-			PublicAdditionalLibraries.Add(Path.Combine(MySQLLibPath, "mysqlcppconn8-static.lib"));
-			PublicAdditionalLibraries.Add(Path.Combine(MySQLLibPath, "libssl.lib"));
-			PublicAdditionalLibraries.Add(Path.Combine(MySQLLibPath, "libcrypto.lib"));
+			PublicAdditionalLibraries.Add(Path.Combine(LibDir, "mysqlcppconn.lib"));
+			PublicAdditionalLibraries.Add(Path.Combine(LibDir, "libssl.lib"));
+			PublicAdditionalLibraries.Add(Path.Combine(LibDir, "libcrypto.lib"));
 
-			// Connector 仍依赖 OpenSSL 动态库
-			RuntimeDependencies.Add("$(BinaryOutputDir)/libcrypto-1_1-x64.dll",
-				Path.Combine(MySQLDllPath, "libcrypto-1_1-x64.dll"));
-			RuntimeDependencies.Add("$(BinaryOutputDir)/libssl-1_1-x64.dll",
-				Path.Combine(MySQLDllPath, "libssl-1_1-x64.dll"));
+			PublicDelayLoadDLLs.Add("mysqlcppconn-7-vs14.dll");
+			PublicDelayLoadDLLs.Add("libssl-1_1-x64.dll");
+			PublicDelayLoadDLLs.Add("libcrypto-1_1-x64.dll");
+
+			RuntimeDependencies.Add("$(TargetOutputDir)/mysqlcppconn-7-vs14.dll", Path.Combine(DllDir, "mysqlcppconn-7-vs14.dll"));
+			RuntimeDependencies.Add("$(TargetOutputDir)/libssl-1_1-x64.dll", Path.Combine(DllDir, "libssl-1_1-x64.dll"));
+			RuntimeDependencies.Add("$(TargetOutputDir)/libcrypto-1_1-x64.dll", Path.Combine(DllDir, "libcrypto-1_1-x64.dll"));
 		}
 
 		// Uncomment if you are using Slate UI

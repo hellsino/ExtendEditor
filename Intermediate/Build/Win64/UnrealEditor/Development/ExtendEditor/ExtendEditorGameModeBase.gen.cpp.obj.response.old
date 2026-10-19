@@ -2,6 +2,7 @@
 /I .
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Inc\ExtendEditor"
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Source"
+/I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\include"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public

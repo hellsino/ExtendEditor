@@ -57,7 +57,6 @@
 #define UE_IS_ENGINE_MODULE 0
 #define UE_PROJECT_NAME ExtendEditor
 #define UE_TARGET_NAME ExtendEditorEditor
-#define STATIC_CONCPP 1
 #define UE_MODULE_NAME "ExtendEditor"
 #define UE_PLUGIN_NAME ""
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

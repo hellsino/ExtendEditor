@@ -1,8 +1,8 @@
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Inc\ExtendEditor\ExtendEditor.init.gen.cpp"
 /I .
-/I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\include"
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Inc\ExtendEditor"
 /I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Source"
+/I "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\include"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -254,6 +254,7 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I ThirdParty\Boost\boost-1_70_0\include
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
