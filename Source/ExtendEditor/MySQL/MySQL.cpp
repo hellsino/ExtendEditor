@@ -8,9 +8,9 @@ THIRD_PARTY_INCLUDES_START
 #include <mysql.h>
 THIRD_PARTY_INCLUDES_END
 
-FMySQLQueryResult FMySQL::SelectOneFromDual()
+FQueryResult FMySQL::SelectOneFromDual()
 {
-	FMySQLQueryResult Result;
+	FQueryResult Result;
 
 	const FMySQLConfig Config = FMySQLConfig::LoadFromEngineIni();
 
