@@ -1,13 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "MySQL.h"
-#include "Misc/ConfigCacheIni.h"
 
-#if PLATFORM_WINDOWS
 THIRD_PARTY_INCLUDES_START
 #include <mysql.h>
 THIRD_PARTY_INCLUDES_END
-#endif
 
 FMySQLQueryResult FMySQL::SelectOneFromDual()
 {
@@ -24,10 +21,6 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 	GConfig->GetString(TEXT("MySQL"), TEXT("User"), User, GEngineIni);
 	GConfig->GetString(TEXT("MySQL"), TEXT("Password"), Password, GEngineIni);
 
-#if !PLATFORM_WINDOWS
-	Result.ErrorMessage = TEXT("仅 Win64 支持 MySQL C API");
-	return Result;
-#else
 	const FTCHARToUTF8 HostUtf8(*Host);
 	const FTCHARToUTF8 UserUtf8(*User);
 	const FTCHARToUTF8 PasswordUtf8(*Password);
@@ -41,7 +34,9 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 		return Result;
 	}
 
-	if (!mysql_real_connect(Conn,HostUtf8.Get(),UserUtf8.Get(),PasswordUtf8.Get(),DatabaseUtf8.Get(),MySqlPort,nullptr,0))
+	MYSQL* Mysql_Real_Connect = mysql_real_connect(Conn, HostUtf8.Get(), UserUtf8.Get(), PasswordUtf8.Get(),
+	                                               DatabaseUtf8.Get(), MySqlPort, nullptr, 0);
+	if (!Mysql_Real_Connect)
 	{
 		Result.ErrorMessage = FString(UTF8_TO_TCHAR(mysql_error(Conn)));
 		mysql_close(Conn);
@@ -78,5 +73,4 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 	mysql_free_result(QueryResult);
 	mysql_close(Conn);
 	return Result;
-#endif
 }
