@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "MySQLConfig.h"
-
 #include "Misc/ConfigCacheIni.h"
 
 FMySQLConfig FMySQLConfig::LoadFromEngineIni()

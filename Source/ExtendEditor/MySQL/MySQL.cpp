@@ -2,7 +2,7 @@
 
 #include "MySQL.h"
 
-#include "MySQLConfig.h"
+#include "Config/MySQLConfig.h"
 
 THIRD_PARTY_INCLUDES_START
 #include <mysql.h>

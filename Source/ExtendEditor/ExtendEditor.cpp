@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ExtendEditor.h"
-#include "MySQL.h"
+#include "MySQL/MySQL.h"
 #include "Modules/ModuleManager.h"
 
 class FExtendEditorModule : public FDefaultGameModuleImpl
