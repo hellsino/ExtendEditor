@@ -2,6 +2,8 @@
 
 #include "MySQL.h"
 
+#include "MySQLConfig.h"
+
 THIRD_PARTY_INCLUDES_START
 #include <mysql.h>
 THIRD_PARTY_INCLUDES_END
@@ -10,22 +12,14 @@ FMySQLQueryResult FMySQL::SelectOneFromDual()
 {
 	FMySQLQueryResult Result;
 
-	bool bEnabled = false;
-	FString Host, Database, User, Password;
-	int32 Port = 3306;
+	const FMySQLConfig Config = FMySQLConfig::LoadFromEngineIni();
 
-	GConfig->GetBool(TEXT("MySQL"), TEXT("Enabled"), bEnabled, GEngineIni);
-	GConfig->GetString(TEXT("MySQL"), TEXT("Host"), Host, GEngineIni);
-	GConfig->GetInt(TEXT("MySQL"), TEXT("Port"), Port, GEngineIni);
-	GConfig->GetString(TEXT("MySQL"), TEXT("Database"), Database, GEngineIni);
-	GConfig->GetString(TEXT("MySQL"), TEXT("User"), User, GEngineIni);
-	GConfig->GetString(TEXT("MySQL"), TEXT("Password"), Password, GEngineIni);
-
-	const FTCHARToUTF8 HostUtf8(*Host);
-	const FTCHARToUTF8 UserUtf8(*User);
-	const FTCHARToUTF8 PasswordUtf8(*Password);
-	const FTCHARToUTF8 DatabaseUtf8(*Database);
-	const unsigned int MySqlPort = Port > 0 ? static_cast<unsigned int>(Port) : 3306u;
+	const FTCHARToUTF8 HostUtf8(*Config.Host);
+	const FTCHARToUTF8 UserUtf8(*Config.User);
+	const FTCHARToUTF8 PasswordUtf8(*Config.Password);
+	const FTCHARToUTF8 DatabaseUtf8(*Config.Database);
+	const unsigned int MySqlPort =
+		Config.Port > 0 ? static_cast<unsigned int>(Config.Port) : 3306u;
 
 	MYSQL* Conn = mysql_init(nullptr);
 	if (!Conn)
