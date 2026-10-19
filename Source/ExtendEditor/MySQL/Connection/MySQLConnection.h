@@ -17,8 +17,8 @@ public:
 	FMySQLConnection& operator=(const FMySQLConnection&) = delete;
 	FMySQLConnection& operator=(FMySQLConnection&& Other) noexcept;
 
-	static bool ConnectFromEngineIni(FMySQLConnection& OutConnection, FString& OutError);
-	static bool Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection, FString& OutError);
+	static bool ConnectFromEngineIni(FMySQLConnection& OutConnection);
+	static bool Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection);
 
 	MYSQL* GetConn() const { return Conn; }
 

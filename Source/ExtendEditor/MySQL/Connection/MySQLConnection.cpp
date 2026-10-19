@@ -28,13 +28,13 @@ FMySQLConnection& FMySQLConnection::operator=(FMySQLConnection&& Other) noexcept
 	return *this;
 }
 
-bool FMySQLConnection::ConnectFromEngineIni(FMySQLConnection& OutConnection, FString& OutError)
+bool FMySQLConnection::ConnectFromEngineIni(FMySQLConnection& OutConnection)
 {
 	const FMySQLConfig Config = FMySQLConfig::LoadFromEngineIni();
-	return Connect(Config, OutConnection, OutError);
+	return Connect(Config, OutConnection);
 }
 
-bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection, FString& OutError)
+bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection)
 {
 	OutConnection.Close();
 
@@ -49,7 +49,8 @@ bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& Out
 	                                      DatabaseUtf8.Get(), MySqlPort, nullptr, 0);
 	if (!Connected)
 	{
-		OutError = FString(UTF8_TO_TCHAR(mysql_error(RawConn)));
+		FString String(UTF8_TO_TCHAR(mysql_error(RawConn)));
+		// TODO Log
 		mysql_close(RawConn);
 		return false;
 	}

@@ -11,9 +11,9 @@ THIRD_PARTY_INCLUDES_END
 FQueryResult FMySQL::SelectOneFromDual()
 {
 	FQueryResult Result;
-
 	FMySQLConnection Connection;
-	if (!FMySQLConnection::ConnectFromEngineIni(Connection, Result.ErrorMessage))
+
+	if (!FMySQLConnection::ConnectFromEngineIni(Connection))
 	{
 		return Result;
 	}
