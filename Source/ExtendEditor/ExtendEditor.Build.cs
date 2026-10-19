@@ -13,18 +13,14 @@ public class ExtendEditor : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
-		// MySQL C API (libmysqlclient), Win64 only — 见 ThirdParty/libmysql
+		// MySQL C API, Win64 only
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
-			string MySqlRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/libmysql"));
-			string IncludeDir = Path.Combine(MySqlRoot, "include");
-			string LibDir = Path.Combine(MySqlRoot, "lib");
-
-			PublicIncludePaths.Add(IncludeDir);
-			PublicAdditionalLibraries.Add(Path.Combine(LibDir, "libmysql.lib"));
-
+			string MySqlRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/MySQL"));
+			PublicIncludePaths.Add(Path.Combine(MySqlRoot, "include"));
+			PublicAdditionalLibraries.Add(Path.Combine(MySqlRoot, "lib", "libmysql.lib"));
 			PublicDelayLoadDLLs.Add("libmysql.dll");
-			RuntimeDependencies.Add("$(TargetOutputDir)/libmysql.dll", Path.Combine(LibDir, "libmysql.dll"));
+			RuntimeDependencies.Add("$(TargetOutputDir)/libmysql.dll", Path.Combine(MySqlRoot, "lib", "libmysql.dll"));
 		}
 
 		// Uncomment if you are using Slate UI
