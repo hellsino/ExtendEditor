@@ -16,7 +16,7 @@ public class ExtendEditor : ModuleRules
 		// MySQL C API, Win64 only
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
-			string MySqlRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/MySQL"));
+			string MySqlRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/mysql"));
 			PublicIncludePaths.Add(Path.Combine(MySqlRoot, "include"));
 			PublicAdditionalLibraries.Add(Path.Combine(MySqlRoot, "lib", "libmysql.lib"));
 			PublicDelayLoadDLLs.Add("libmysql.dll");
