@@ -28,6 +28,12 @@ FMySQLConnection& FMySQLConnection::operator=(FMySQLConnection&& Other) noexcept
 	return *this;
 }
 
+bool FMySQLConnection::ConnectFromEngineIni(FMySQLConnection& OutConnection, FString& OutError)
+{
+	const FMySQLConfig Config = FMySQLConfig::LoadFromEngineIni();
+	return Connect(Config, OutConnection, OutError);
+}
+
 bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection, FString& OutError)
 {
 	OutConnection.Close();
@@ -50,12 +56,6 @@ bool FMySQLConnection::Connect(const FMySQLConfig& Config, FMySQLConnection& Out
 
 	OutConnection.Conn = Connected;
 	return true;
-}
-
-bool FMySQLConnection::ConnectFromEngineIni(FMySQLConnection& OutConnection, FString& OutError)
-{
-	const FMySQLConfig Config = FMySQLConfig::LoadFromEngineIni();
-	return Connect(Config, OutConnection, OutError);
 }
 
 void FMySQLConnection::Close()

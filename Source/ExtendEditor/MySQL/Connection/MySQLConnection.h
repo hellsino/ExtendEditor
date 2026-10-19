@@ -17,12 +17,12 @@ public:
 	FMySQLConnection& operator=(const FMySQLConnection&) = delete;
 	FMySQLConnection& operator=(FMySQLConnection&& Other) noexcept;
 
-	bool IsConnected() const { return Conn != nullptr; }
-	MYSQL* Get() const { return Conn; }
-	static bool Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection, FString& OutError);
 	static bool ConnectFromEngineIni(FMySQLConnection& OutConnection, FString& OutError);
+	static bool Connect(const FMySQLConfig& Config, FMySQLConnection& OutConnection, FString& OutError);
+
+	MYSQL* GetConn() const { return Conn; }
 
 private:
-	void Close();
 	MYSQL* Conn = nullptr;
+	void Close();
 };
