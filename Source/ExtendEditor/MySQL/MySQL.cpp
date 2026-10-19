@@ -60,7 +60,7 @@ FQueryResult FMySQL::GetUser()
 
 	MYSQL* Conn = Connection.GetConnection();
 
-	if (mysql_query(Conn, "SELECT * FROM User") != 0)
+	if (mysql_query(Conn, "SELECT * FROM user") != 0)
 	{
 		Result.ErrorMessage = FString(UTF8_TO_TCHAR(mysql_error(Conn)));
 		return Result;
