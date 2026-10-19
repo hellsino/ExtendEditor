@@ -37,19 +37,11 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/libcrypto-1_1-x64.dll",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/libfbxsdk.dll",
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/libssl-1_1-x64.dll",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/mysqlcppconn-7-vs14.dll",
+			"Path": "$(EngineDir)/Binaries/Win64/libmysql.dll",
 			"Type": "RequiredResource"
 		},
 		{
@@ -23695,19 +23687,11 @@
 			"Type": "NonUFS"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/libcrypto-1_1-x64.dll",
-			"Type": "NonUFS"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/libfbxsdk.dll",
 			"Type": "NonUFS"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/libssl-1_1-x64.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/mysqlcppconn-7-vs14.dll",
+			"Path": "$(EngineDir)/Binaries/Win64/libmysql.dll",
 			"Type": "NonUFS"
 		},
 		{

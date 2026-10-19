@@ -16,6 +16,9 @@
 /INCREMENTAL:NO
 /ignore:4199
 /ignore:4099
+/DELAYLOAD:"mysqlcppconn-7-vs14.dll"
+/DELAYLOAD:"libssl-1_1-x64.dll"
+/DELAYLOAD:"libcrypto-1_1-x64.dll"
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
 /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.29.30133\lib\x64"
@@ -40,7 +43,7 @@
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditor.init.gen.cpp.obj"
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\Intermediate\Build\Win64\UnrealEditor\Development\ExtendEditor\ExtendEditorGameModeBase.gen.cpp.obj"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Default.rc2.res"
-"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\lib64\vs14\mysqlcppconn8-static.lib"
+"C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\lib64\vs14\mysqlcppconn.lib"
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\lib64\vs14\libssl.lib"
 "C:\Users\zxwang\Documents\Unreal Projects\ExtendEditor\ThirdParty\mysql-connector-c++-8.0.20-winx64\lib64\vs14\libcrypto.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
